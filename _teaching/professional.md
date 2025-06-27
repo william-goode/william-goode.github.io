@@ -8,8 +8,9 @@ date: August 2023 - May 2024
 location: "Nashville, Texas"
 ---
 
-Vanderbilt University
-======
-    MATH 1680, Elementary Probability and Statistics, 3 courses.
-    MATH 1710, Calculus I, 3 courses.
-    MATH 1720, Calculus II, 3 courses.
+### Vanderbilt University
+* MATH 1100, Survey of Calculus, 3 courses
+
+* MATH 1201, Single-Variable Calculus II, 3 courses
+
+* MATH 2810, Probability and Statistics for Engineering, 3 courses
