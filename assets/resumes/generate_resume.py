@@ -4,6 +4,7 @@ Generate William Goode's professional resume as a PDF.
 Enhanced with improved visual hierarchy and spacing.
 """
 
+import os
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
@@ -11,8 +12,9 @@ from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, KeepTogether, Table, TableStyle, HRFlowable
 from reportlab.lib.colors import HexColor
 
-# Output file
-OUTPUT_FILE = "William_Goode_Resume_Professional.pdf"
+# Output file - always output to the same directory as this script
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_FILE = os.path.join(SCRIPT_DIR, "William_Goode_Resume_Professional.pdf")
 
 # Professional color palette
 HEADER_COLOR = HexColor("#1a1a1a")
