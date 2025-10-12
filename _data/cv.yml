@@ -192,6 +192,7 @@ skills:
       - "FastAPI"
       - "ASP.NET Core"
       - "Entity Framework"
+      - "LLM integration"
 
   - category: "Data Engineering & Databases"
     items:
@@ -202,10 +203,6 @@ skills:
       - "Query optimization and performance tuning"
       - "Exploratory data analysis"
       - "Schema reconciliation"
-
-  - category: "Machine Learning & AI"
-    items:
-      - "LLM integration for data workflows"
 
   - category: "Mathematics"
     items:

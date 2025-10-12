@@ -157,17 +157,12 @@ story.append(Paragraph(
 ))
 story.append(Spacer(1, 2))
 story.append(Paragraph(
-    "<b>Backend:</b> FastAPI, ASP.NET Core, Entity Framework",
+    "<b>Backend:</b> FastAPI, ASP.NET Core, Entity Framework, LLM integration",
     body_style
 ))
 story.append(Spacer(1, 2))
 story.append(Paragraph(
     "<b>Data Engineering:</b> Data pipeline development, Vector databases, DuckDB, MongoDB, Query optimization, Schema reconciliation",
-    body_style
-))
-story.append(Spacer(1, 2))
-story.append(Paragraph(
-    "<b>Machine Learning:</b> LLM integration for data workflows",
     body_style
 ))
 
