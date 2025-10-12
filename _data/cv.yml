@@ -198,8 +198,6 @@ skills:
     items:
       - "Data pipeline development"
       - "Vector databases"
-      - "DuckDB"
-      - "MongoDB"
       - "Query optimization and performance tuning"
       - "Exploratory data analysis"
       - "Schema reconciliation"

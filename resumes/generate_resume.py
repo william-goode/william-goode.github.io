@@ -162,7 +162,7 @@ story.append(Paragraph(
 ))
 story.append(Spacer(1, 2))
 story.append(Paragraph(
-    "<b>Data Engineering:</b> Data pipeline development, Vector databases, DuckDB, MongoDB, Query optimization, Schema reconciliation",
+    "<b>Data Engineering:</b> Data pipeline development, Vector databases, Query optimization, Schema reconciliation",
     body_style
 ))
 
