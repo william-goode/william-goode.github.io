@@ -40,11 +40,11 @@ My research focuses on representations of infinite-dimensional Lie algebras and 
 
 I develop cloud infrastructure and data pipelines for an AI-powered business intelligence platform. Work includes:
 
-- Data pipeline architecture on AWS (Lambda, S3, RDS, Athena) and GCP (BigQuery, Cloud Run)
+- Data pipeline development on AWS (Lambda, S3, RDS, Athena) and GCP (BigQuery, Cloud Run)
 - FastAPI microservices with Docker containerization
 - SQL generation service with performance tuning for multi-tenant BigQuery
 - GDPR-compliant data workflows and IAM provisioning
-- Database migrations and ETL systems
+- Data ingestion systems
 - Technical integration with enterprise clients
 
 **Previous Positions:**
@@ -56,13 +56,23 @@ I develop cloud infrastructure and data pipelines for an AI-powered business int
 
 ## Technical Skills
 
-**Languages**: Python, SQL (BigQuery, MS SQL Server, PostgreSQL), C#, JavaScript/TypeScript  
-**Cloud**: AWS (Lambda, S3, RDS, Athena, Glue), GCP (BigQuery, Cloud Storage, Cloud Run, IAM)  
-**Backend**: FastAPI, ASP.NET Core, Flask, Dash  
-**Data Engineering**: ETL pipelines, vector databases, DuckDB, MongoDB, query optimization  
-**ML/AI**: SQL generation with LLMs, scikit-learn, pandas, time-series modeling (ARIMA)  
-**DevOps**: Docker, database migrations, GDPR compliance  
-**Mathematics**: Abstract algebra, representation theory, Lie algebras, differential geometry
+**Languages**  
+Python, SQL (BigQuery, MS SQL Server, PostgreSQL), C# / .NET
+
+**Cloud & Infrastructure**  
+AWS (Lambda, S3, RDS, Athena), GCP (BigQuery, Cloud Storage, Cloud Run, IAM), Docker, Data ingestion pipelines
+
+**Backend**  
+FastAPI, ASP.NET Core, Entity Framework
+
+**Data Engineering & Databases**  
+Data pipeline development, Vector databases, DuckDB, MongoDB, Query optimization and performance tuning, Exploratory data analysis, Schema reconciliation
+
+**Machine Learning & AI**  
+SQL generation with LLMs, ML prototyping (schema reconciliation), scikit-learn, pandas
+
+**Mathematics**  
+Abstract algebra, Representation theory, Lie algebras and superalgebras
 
 ---
 
