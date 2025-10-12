@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I began at UNT as a classical performance major playing trombone before transitioning to mathematics and economics. I completed my Ph.D. in Mathematics in 2023, studying representations of infinite-dimensional Lie algebras. I now work as a backend engineer, developing data infrastructure for AI-powered business intelligence.
+I began at UNT as a classical performance major playing trombone before transitioning to mathematics and economics. I completed my Ph.D. in Mathematics in 2023, studying representations of infinite-dimensional Lie algebras and superalgebras. I now work as a backend engineer, developing data infrastructure for AI-powered business intelligence.
 
 ---
 
