@@ -81,7 +81,7 @@ I develop cloud infrastructure and data pipelines for an AI-powered business int
   .skill-category h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #cdd6f4;
+    color: #DCDDDE;
   }
   
   .skill-category ul {
@@ -91,8 +91,8 @@ I develop cloud infrastructure and data pipelines for an AI-powered business int
   
   .skill-category li {
     padding: 0.5rem 0;
-    border-bottom: 1px solid #313244;
-    color: #bac2de;
+    border-bottom: 1px solid #2C2F33;
+    color: #B9BBBE;
   }
   
   .skill-category li:last-child {
