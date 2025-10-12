@@ -23,14 +23,12 @@ My research focuses on representations of infinite-dimensional Lie algebras and 
 
 **Publications:**
 - C. H. Conley, W. Goode. "An approach to annihilators in the context of vector field Lie algebras." *Expositiones Mathematicae* (2024). [arXiv:2403.01728](https://arxiv.org/abs/2403.01728)
-- C. Conley, W. Goode. "Annihilators of irreducible representations of the Lie superalgebra of contact vector fields on the superline." In preparation.
-- W. Goode. "Annihilators of some inadmissible irreducible representations of the Lie algebra of vector fields on the line." In preparation.
 
 **Presentations:**
 - Joint Mathematics Meeting, Boston (2023)
 - Graduate Algebra Symposium, UT Arlington (2022)
 - Southwest Local Algebra Meeting, Baylor University (2022)
-- Multiple talks at University of North Texas Algebra Seminar (2021-2022)
+- University of North Texas Algebra Seminar (2021-2022)
 
 ---
 
@@ -40,12 +38,11 @@ My research focuses on representations of infinite-dimensional Lie algebras and 
 
 I develop cloud infrastructure and data pipelines for an AI-powered business intelligence platform. Work includes:
 
-- Data pipeline development on AWS (Lambda, S3, RDS, Athena) and GCP (BigQuery, Cloud Run)
-- FastAPI microservices with Docker containerization
-- SQL generation service with performance tuning for multi-tenant BigQuery
-- GDPR-compliant data workflows and IAM provisioning
-- Data ingestion systems
-- Technical integration with enterprise clients
+- Architect data ingestion systems for client database integration
+- Develop microservices for SQL generation and query execution
+- Design data workflows compliant with GDPR requirements
+- Manage security and access provisioning
+- Serve as technical point of contact for client onboarding
 
 **Previous Positions:**
 - Software Engineer, Concan Consulting Corporation (April - June 2025)
