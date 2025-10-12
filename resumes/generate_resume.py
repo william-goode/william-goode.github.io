@@ -179,13 +179,13 @@ story.append(HRFlowable(width="100%", thickness=0.5, color=SECTION_COLOR, spaceA
 story.append(Paragraph("<b>Backend Engineer</b>", job_title_style))
 story.append(Paragraph("Scaylor AI | August 2025 – Present", company_style))
 bullets = [
-    "Architected and deployed scalable data pipelines on AWS (Lambda, S3, RDS, Athena) and GCP (BigQuery, Cloud Run)",
-    "Developed FastAPI microservices with Docker containerization for production deployment",
-    "Led SQL generation service development with performance tuning for multi-tenant BigQuery architecture",
-    "Implemented GDPR-compliant data workflows and IAM security provisioning",
-    "Engineered database migrations (MS SQL Server → S3 → RDS) and data ingestion systems",
-    "Served as technical point of contact for client integrations and onboarding",
-    "Built vector database ingestion pipelines and prototype ML-based schema reconciliation",
+    "Architect and deploy data ingestion systems for client database integration",
+    "Develop microservices for SQL generation and query execution",
+    "Design and implement data workflows compliant with GDPR requirements",
+    "Manage security and access provisioning across cloud infrastructure",
+    "Execute database migrations and establish data ingestion pipelines",
+    "Serve as technical point of contact for client integrations and onboarding",
+    "Conduct technical interviews for engineering positions",
 ]
 for bullet in bullets:
     story.append(Paragraph(f"• {bullet}", bullet_style))
@@ -195,8 +195,8 @@ story.append(Spacer(1, 10))
 story.append(Paragraph("<b>Software Engineer</b>", job_title_style))
 story.append(Paragraph("Concan Consulting Corporation | April – June 2025", company_style))
 bullets = [
-    "Developed REST API in C# using ASP.NET Core and Entity Framework",
-    "Consulted small e-commerce businesses on best practices",
+    "Developed REST API for client applications",
+    "Consulted small e-commerce businesses on technical best practices",
 ]
 for bullet in bullets:
     story.append(Paragraph(f"• {bullet}", bullet_style))
