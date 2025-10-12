@@ -63,7 +63,7 @@ AWS (Lambda, S3, RDS, Athena), GCP (BigQuery, Cloud Storage, Cloud Run, IAM), Do
 FastAPI, ASP.NET Core, Entity Framework, LLM integration
 
 **Data Engineering & Databases**  
-Data pipeline development, Vector databases, DuckDB, MongoDB, Query optimization and performance tuning, Exploratory data analysis, Schema reconciliation
+Data pipeline development, Vector databases, Query optimization and performance tuning, Exploratory data analysis, Schema reconciliation
 
 **Mathematics**  
 Abstract algebra, Representation theory, Lie algebras and superalgebras
