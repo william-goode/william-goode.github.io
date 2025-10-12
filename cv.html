@@ -1,8 +1,30 @@
 ---
 layout: page
-title: Curriculum Vitae
+title: Resume & CV
 permalink: /cv/
 ---
+
+<section class="download-section">
+  <div class="download-grid">
+    <div class="download-card">
+      <h3>Professional Resume</h3>
+      <p class="download-meta">Updated: October 12, 2025</p>
+      <a href="{{ '/resumes/William_Goode_Resume_Professional.pdf' | relative_url }}" class="download-button" download>
+        Download PDF
+      </a>
+    </div>
+    
+    <div class="download-card">
+      <h3>Academic CV</h3>
+      <p class="download-meta">Updated: October 12, 2025</p>
+      <a href="{{ '/resumes/CV_current.pdf' | relative_url }}" class="download-button" download>
+        Download PDF
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="ornament"></div>
 
 <section class="cv-section">
   <h2>Education</h2>
@@ -14,24 +36,6 @@ permalink: /cv/
 <section class="cv-section">
   <h2>Experience</h2>
   <div id="cv-experience-root"></div>
-</section>
-
-<div class="ornament"></div>
-
-<section class="cv-section">
-  <h2>Skills</h2>
-  <div class="skills-list">
-    {% for skill_category in site.data.cv.skills %}
-      <div class="skill-category">
-        <h3>{{ skill_category.category }}</h3>
-        <ul>
-          {% for skill in skill_category.items %}
-            <li>{{ skill }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endfor %}
-  </div>
 </section>
 
 <script>
@@ -81,30 +85,63 @@ permalink: /cv/
     margin-bottom: 3rem;
   }
   
-  .skills-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+  .download-section {
+    margin-bottom: 3rem;
   }
   
-  .skill-category h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+  .download-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .download-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .download-card {
+    background-color: #313244;
+    padding: 2rem;
+    border-radius: 6px;
+    border: 1px solid #45475a;
+    text-align: center;
+  }
+  
+  .download-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
     color: #cdd6f4;
   }
   
-  .skill-category ul {
-    list-style: none;
-    margin-left: 0;
+  .download-meta {
+    font-size: 0.85rem;
+    color: #a6adc8;
+    margin-bottom: 1.5rem;
+    font-style: italic;
   }
   
-  .skill-category li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #313244;
+  .download-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #45475a;
+    color: #cdd6f4;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    border: 1px solid #6c7086;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
   }
   
-  .skill-category li:last-child {
-    border-bottom: none;
+  .download-button:hover {
+    background-color: #585b70;
+    border-color: #7f849c;
+    text-decoration: none;
   }
 </style>
 

@@ -53,20 +53,48 @@ I develop cloud infrastructure and data pipelines for an AI-powered business int
 
 ## Technical Skills
 
-**Languages**  
-Python, SQL (BigQuery, MS SQL Server, PostgreSQL), C# / .NET
+<div class="skills-list">
+  {% for skill_category in site.data.cv.skills %}
+    <div class="skill-category">
+      <h3>{{ skill_category.category }}</h3>
+      <ul>
+        {% for skill in skill_category.items %}
+          <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>
 
-**Cloud & Infrastructure**  
-AWS (Lambda, S3, RDS, Athena), GCP (BigQuery, Cloud Storage, Cloud Run, IAM), Docker, Data ingestion pipelines
-
-**Backend**  
-FastAPI, ASP.NET Core, Entity Framework, LLM integration
-
-**Data Engineering & Databases**  
-Data pipeline development, Vector databases, Query optimization and performance tuning, Exploratory data analysis, Schema reconciliation
-
-**Mathematics**  
-Abstract algebra, Representation theory, Lie algebras and superalgebras
+<style>
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .skill-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #cdd6f4;
+  }
+  
+  .skill-category ul {
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  .skill-category li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #313244;
+    color: #bac2de;
+  }
+  
+  .skill-category li:last-child {
+    border-bottom: none;
+  }
+</style>
 
 ---
 
