@@ -1,0 +1,233 @@
+education:
+  - date: "2017 - 2023"
+    title: "Ph.D. in Mathematics"
+    organization: "University of North Texas"
+    description: "Dissertation: Annihilators of irreducible representations of the Lie superalgebra of contact vector fields on the superline. Advisor: Dr. Charles Conley."
+    highlights:
+      - "4.0 GPA"
+      - "2023 Outstanding Graduate Student Award"
+      - "$5,000 Dean's Doctoral Fellows Stipend (2022)"
+      - "Published in Expositiones Mathematicae"
+      - "Research area: Representations of infinite-dimensional Lie (super)algebras"
+  
+  - date: "2013 - 2017"
+    title: "B.S. in Mathematics & B.S. in Economics"
+    organization: "University of North Texas"
+    description: "Dual degree program, graduated cum laude."
+    highlights:
+      - "3.79 GPA: Cum Laude"
+      - "Jack Johnson Award for Top BA/BS in Economics (2017)"
+
+experience:
+  - date: "Aug 2025 - Present"
+    title: "Backend Engineer"
+    organization: "Scaylor AI"
+    description: "Full-stack data engineering and cloud infrastructure development for AI-powered business intelligence platform."
+    highlights:
+      - "Architected and deployed scalable data pipelines on AWS and GCP (Lambda, BigQuery, Cloud Run)"
+      - "Developed FastAPI microservices with Docker containerization for production deployment"
+      - "Led SQL generation service development with performance tuning for multi-tenant BigQuery architecture"
+      - "Implemented GDPR-compliant data workflows and IAM security provisioning"
+      - "Engineered database migrations (MS SQL Server → S3 → RDS) and data ingestion systems"
+      - "Served as technical point of contact for client integrations and onboarding"
+      - "Conducted technical interviews and participated in hiring for Full-Stack Engineer positions"
+      - "Built vector database ingestion pipelines and prototype ML-based schema reconciliation"
+  
+  - date: "Apr 2025 - Jun 2025"
+    title: "Software Engineer"
+    organization: "Concan Consulting Corporation"
+    description: "Full-stack development and e-commerce consulting (Remote)."
+    highlights:
+      - "Developed REST API in C# using ASP.NET Core and Entity Framework"
+      - "Consulted small e-commerce businesses on best practices"
+      - "Wrote custom scripts in Liquid for front-end development"
+  
+  - date: "Aug 2023 - Aug 2024"
+    title: "Senior Lecturer of Mathematics"
+    organization: "Vanderbilt University"
+    description: "Full-time teaching position covering calculus, statistics, and survey courses."
+    highlights:
+      - "MATH 1100: Survey of Calculus (3 courses)"
+      - "MATH 1201: Single-Variable Calculus II (2 courses)"
+      - "MATH 2810: Probability and Statistics for Engineering (1 course)"
+  
+  - date: "Aug 2017 - May 2023"
+    title: "Graduate Teaching Fellow"
+    organization: "University of North Texas"
+    description: "Instructor of record and teaching assistant for mathematics courses."
+    highlights:
+      - "Instructor: Elementary Probability and Statistics (3 courses)"
+      - "Instructor: Calculus I (3 courses), Calculus II (3 courses)"
+      - "TA: Calculus I (13 recitations), Calculus II (9 recitations)"
+      - "TA: Elementary Probability and Statistics (21 recitations)"
+      - "Graduate Algebra Group Organizer (2022-2023)"
+      - "Graduate Student Mentor (2019-2023)"
+  
+  - date: "Aug 2014 - May 2017"
+    title: "Undergraduate Teaching Assistant"
+    organization: "University of North Texas"
+    description: "Teaching assistant for various undergraduate mathematics courses."
+    highlights:
+      - "Developmental Mathematics (2 recitations)"
+      - "College Math for Business (3 recitations)"
+      - "Precalculus (2 recitations)"
+
+publications:
+  - title: "An approach to annihilators in the context of vector field Lie algebras"
+    authors: "C. Conley, W. Goode"
+    venue: "Expositiones Mathematicae"
+    year: "2024"
+    status: "Published"
+    link: "https://arxiv.org/abs/2403.01728"
+    note: "arXiv: 2403.01728"
+  
+  - title: "Annihilators of irreducible representations of the Lie superalgebra of contact vector fields on the superline"
+    authors: "C. Conley, W. Goode"
+    venue: ""
+    year: ""
+    status: "In preparation"
+  
+  - title: "Annihilators of some inadmissible irreducible representations of the Lie algebra of vector fields on the line"
+    authors: "W. Goode"
+    venue: ""
+    year: ""
+    status: "In preparation"
+
+presentations:
+  - title: "Annihilators of Tensor Density Modules of Contact Vector Fields"
+    venue: "Joint Mathematics Meeting"
+    location: "Boston, MA"
+    year: "2023"
+    type: "Talk"
+  
+  - title: "Annihilators of Tensor Density Modules of Contact Vector Fields"
+    venue: "Graduate Algebra Group, University of North Texas"
+    location: "Denton, TX"
+    year: "2022"
+    type: "Talk"
+  
+  - title: "Honey, I Annihilated the Kids"
+    venue: "Algebra Seminar, University of North Texas"
+    location: "Denton, TX"
+    year: "2022"
+    type: "Talk"
+  
+  - title: "Honey, I Annihilated the Kids"
+    venue: "Graduate Algebra Symposium, UT Arlington"
+    location: "Arlington, TX"
+    year: "2022"
+    type: "Talk"
+  
+  - title: "I Ain't Afraid of No Ghost!"
+    venue: "Algebra Seminar, University of North Texas"
+    location: "Denton, TX"
+    year: "2021"
+    type: "Talk"
+  
+  - title: "Tensor Density Modules of Contact Vector Fields"
+    venue: "Southwest Local Algebra Meeting (SLAM), Baylor University"
+    location: "Waco, TX"
+    year: "2022"
+    type: "Poster"
+  
+  - title: "Tensor Density Modules of Contact Vector Fields"
+    venue: "Texas-Oklahoma Representations and Automorphic Forms (TORA)"
+    location: "Stillwater, OK"
+    year: "2022"
+    type: "Poster"
+
+projects:
+  - title: "Machine Learning for Object Detection"
+    description: "Developed and implemented ML models for object detection and image classification on static and live video feeds to automate workflows."
+    technologies:
+      - "Python"
+      - "Computer Vision"
+      - "Object Detection"
+  
+  - title: "Dynamic Data Visualization Web App"
+    description: "Created a local database in Microsoft SQL Server and connected it to a dynamic data visualization web app using Dash and Flask."
+    technologies:
+      - "Python"
+      - "Flask"
+      - "Dash"
+      - "SQL Server"
+  
+  - title: "Financial Strategy Analysis"
+    description: "Conducted A/B testing and statistical analysis, including regression and hypothesis testing, to gain data-driven insights into finance strategies."
+    technologies:
+      - "Python"
+      - "Statistical Analysis"
+      - "A/B Testing"
+  
+  - title: "Game Player Forecasting"
+    description: "Utilized time-series modeling (ARIMA) to forecast maximum weekly player counts for an online game."
+    technologies:
+      - "Python"
+      - "ARIMA"
+      - "Time Series Analysis"
+  
+  - title: "Containerized ML Deployment"
+    description: "Deployed machine learning models on Amazon ECS as containerized web applications."
+    technologies:
+      - "Docker"
+      - "Amazon ECS"
+      - "Python"
+
+skills:
+  - category: "Programming Languages"
+    items:
+      - "Python"
+      - "SQL (MS SQL Server, BigQuery, PostgreSQL)"
+      - "C# / .NET"
+      - "JavaScript / TypeScript"
+      - "R"
+  
+  - category: "Cloud & Infrastructure"
+    items:
+      - "AWS (Lambda, S3, RDS, Athena, Glue, Redshift)"
+      - "GCP (BigQuery, Cloud Storage, Cloud Run, IAM)"
+      - "Docker / Containerization"
+      - "Database Migrations & ETL Pipelines"
+  
+  - category: "Backend & APIs"
+    items:
+      - "FastAPI"
+      - "ASP.NET Core"
+      - "REST API Development"
+      - "Microservices Architecture"
+      - "Entity Framework"
+      - "Flask / Dash"
+  
+  - category: "Data Engineering & Databases"
+    items:
+      - "Data Pipeline Architecture"
+      - "Vector Databases"
+      - "DuckDB / MongoDB"
+      - "Query Optimization & Performance Tuning"
+      - "Exploratory Data Analysis (EDA)"
+      - "Schema Design & Reconciliation"
+  
+  - category: "Machine Learning & AI"
+    items:
+      - "ML Model Prototyping (Classification, Detection)"
+      - "SQL Generation with LLMs"
+      - "Time-Series Forecasting (ARIMA)"
+      - "scikit-learn / pandas"
+      - "Statistical Analysis"
+  
+  - category: "Additional Skills"
+    items:
+      - "GDPR Compliance & Data Regulation"
+      - "Technical Documentation"
+      - "Client Integration & Communication"
+      - "Technical Interviewing & Hiring"
+      - "React / Frontend Integration"
+  
+  - category: "Mathematics"
+    items:
+      - "Abstract Algebra"
+      - "Representation Theory"
+      - "Lie Algebras & Superalgebras"
+      - "Differential Geometry"
+      - "Probability & Statistics"
+
