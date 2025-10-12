@@ -121,22 +121,8 @@ a {
   margin: 0 auto;
   padding: 0 $spacing-md;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-
-.nav-logo {
-  font-family: $font-heading;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $text;
-  text-decoration: none;
-  letter-spacing: -0.02em;
-  
-  &:hover {
-    color: $subtext1;
-    text-decoration: none;
-  }
 }
 
 .nav-links {
@@ -242,6 +228,13 @@ a {
       padding: 0;
       color: $text;
     }
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid $surface1;
+    margin: $spacing-md 0;
+    margin-bottom: $spacing-lg;
   }
 }
 
