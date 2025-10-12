@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <h1>William Goode</h1>
+  <p>Mathematician and software engineer.</p>
+</section>
+
+<section class="recent-articles">
+  <h2>Recent Articles</h2>
+  
+  {% assign recent_posts = site.posts | limit: 3 %}
+  {% if recent_posts.size > 0 %}
+    <div class="articles-list">
+      {% for post in recent_posts %}
+        <article class="article-card">
+          <time class="article-date">{{ post.date | date: "%B %d, %Y" }}</time>
+          <h3 class="article-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+          {% if post.excerpt %}
+            <p class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          {% endif %}
+          {% if post.tags %}
+            <div class="article-tags">
+              {% for tag in post.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+    
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="{{ '/articles' | relative_url }}" style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 500;">View all articles →</a>
+    </div>
+  {% else %}
+    <p style="text-align: center; color: #a6adc8;">No articles yet.</p>
+  {% endif %}
+</section>
+
+<div class="ornament"></div>
+
+

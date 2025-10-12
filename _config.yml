@@ -1,0 +1,62 @@
+# Site Settings
+title: "William Goode"
+description: "Ph.D. in Mathematics. Backend engineer."
+url: "https://william-goode.github.io"
+baseurl: ""
+theme: null
+
+# Author Information
+author:
+  name: "William Goode"
+  email: "william.maverick.goode@gmail.com"
+  bio: "Ph.D. in Mathematics. Backend engineer at Scaylor AI."
+  github: "william-goode"
+  linkedin: "william-goode"
+
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /articles/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+  - src/
+  - README.md
+
+# Plugins (GitHub Pages safe)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Permalink style
+permalink: pretty
+

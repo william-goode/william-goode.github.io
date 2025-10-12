@@ -1,0 +1,110 @@
+---
+layout: page
+title: Curriculum Vitae
+permalink: /cv/
+---
+
+<section class="cv-section">
+  <h2>Education</h2>
+  <div id="cv-education-root"></div>
+</section>
+
+<div class="ornament"></div>
+
+<section class="cv-section">
+  <h2>Experience</h2>
+  <div id="cv-experience-root"></div>
+</section>
+
+<div class="ornament"></div>
+
+<section class="cv-section">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    {% for skill_category in site.data.cv.skills %}
+      <div class="skill-category">
+        <h3>{{ skill_category.category }}</h3>
+        <ul>
+          {% for skill in skill_category.items %}
+            <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Education timeline
+    const educationEntries = {{ site.data.cv.education | jsonify }};
+    const educationRoot = ReactDOM.createRoot(document.getElementById('cv-education-root'));
+    educationRoot.render(React.createElement(window.CVTimeline, { entries: educationEntries }));
+    
+    // Experience timeline
+    const experienceEntries = {{ site.data.cv.experience | jsonify }};
+    const experienceRoot = ReactDOM.createRoot(document.getElementById('cv-experience-root'));
+    experienceRoot.render(React.createElement(window.CVTimeline, { entries: experienceEntries }));
+  });
+</script>
+
+<noscript>
+  <div class="cv-fallback">
+    <h3>Education</h3>
+    {% for entry in site.data.cv.education %}
+      <div class="cv-entry">
+        <time>{{ entry.date }}</time>
+        <h4>{{ entry.title }}</h4>
+        <p>{{ entry.organization }}</p>
+        {% if entry.description %}
+          <p>{{ entry.description }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+    
+    <h3>Experience</h3>
+    {% for entry in site.data.cv.experience %}
+      <div class="cv-entry">
+        <time>{{ entry.date }}</time>
+        <h4>{{ entry.title }}</h4>
+        <p>{{ entry.organization }}</p>
+        {% if entry.description %}
+          <p>{{ entry.description }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</noscript>
+
+<style>
+  .cv-section {
+    margin-bottom: 3rem;
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .skill-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #cdd6f4;
+  }
+  
+  .skill-category ul {
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  .skill-category li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #313244;
+  }
+  
+  .skill-category li:last-child {
+    border-bottom: none;
+  }
+</style>
+
