@@ -38,20 +38,20 @@ The annihilator of a module determines its structure and relationships to other 
   display: inline-block;
   padding: 0.75rem 1.5rem;
   margin: 0.5rem;
-  background-color: #313244;
-  color: #cdd6f4;
+  background-color: #2C2F33;
+  color: #DCDDDE;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
-  border: 1px solid #45475a;
+  border: 1px solid #40444B;
   border-radius: 6px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .download-paper-button:hover {
-  background-color: #45475a;
-  border-color: #6c7086;
+  background-color: #40444B;
+  border-color: #72767D;
   text-decoration: none;
 }
 </style>
