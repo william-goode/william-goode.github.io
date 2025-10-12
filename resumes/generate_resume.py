@@ -120,6 +120,7 @@ story = []
 story.append(Paragraph("WILLIAM GOODE", title_style))
 story.append(Paragraph(
     '<a href="mailto:william.maverick.goode@gmail.com" color="#2b6cb0">william.maverick.goode@gmail.com</a> | '
+    '<a href="https://william-goode.github.io" color="#2b6cb0">william-goode.github.io</a><br/>'
     '<a href="https://github.com/william-goode" color="#2b6cb0">github.com/william-goode</a> | '
     '<a href="https://linkedin.com/in/william-goode" color="#2b6cb0">linkedin.com/in/william-goode</a>',
     contact_style
