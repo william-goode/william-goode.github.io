@@ -1,0 +1,100 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{0.5em}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist{nosep, leftmargin=1.5em}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{William Goode}} \\[4pt]
+    \href{mailto:william.maverick.goode@gmail.com}{william.maverick.goode@gmail.com} $\mid$
+    \href{https://github.com/william-goode}{github.com/william-goode} $\mid$
+    \href{https://linkedin.com/in/william-goode}{linkedin.com/in/william-goode}
+\end{center}
+
+\vspace{-8pt}
+
+\section*{Education}
+
+\textbf{Ph.D. in Mathematics} \hfill University of North Texas \hfill 2023 \\
+\textit{Dissertation:} Annihilators of irreducible representations of the Lie superalgebra of contact vector fields \\
+4.0 GPA $\mid$ Published in \textit{Expositiones Mathematicae}
+
+\textbf{B.S. in Mathematics, B.S. in Economics} \hfill University of North Texas \hfill 2017 \\
+3.79 GPA, Cum Laude
+
+\vspace{4pt}
+
+\section*{Technical Skills}
+
+\textbf{Languages:} Python, SQL (BigQuery, MS SQL Server, PostgreSQL), C\# / .NET \\
+\textbf{Cloud \& Infrastructure:} AWS (Lambda, S3, RDS, Athena), GCP (BigQuery, Cloud Storage, Cloud Run, IAM), Docker \\
+\textbf{Backend:} FastAPI, ASP.NET Core, Entity Framework \\
+\textbf{Data Engineering:} Data pipeline development, Vector databases, DuckDB, MongoDB, Query optimization, Schema reconciliation \\
+\textbf{Machine Learning:} SQL generation with LLMs, ML prototyping, scikit-learn, pandas
+
+\vspace{4pt}
+
+\section*{Experience}
+
+\textbf{Backend Engineer} \hfill Scaylor AI \hfill August 2025 -- Present
+\begin{itemize}[leftmargin=1.5em]
+    \item Architected and deployed scalable data pipelines on AWS (Lambda, S3, RDS, Athena) and GCP (BigQuery, Cloud Run)
+    \item Developed FastAPI microservices with Docker containerization for production deployment
+    \item Led SQL generation service development with performance tuning for multi-tenant BigQuery architecture
+    \item Implemented GDPR-compliant data workflows and IAM security provisioning
+    \item Engineered database migrations (MS SQL Server $\rightarrow$ S3 $\rightarrow$ RDS) and data ingestion systems
+    \item Served as technical point of contact for client integrations and onboarding
+    \item Built vector database ingestion pipelines and prototype ML-based schema reconciliation
+\end{itemize}
+
+\textbf{Software Engineer} \hfill Concan Consulting Corporation \hfill April -- June 2025
+\begin{itemize}[leftmargin=1.5em]
+    \item Developed REST API in C\# using ASP.NET Core and Entity Framework
+    \item Consulted small e-commerce businesses on best practices
+\end{itemize}
+
+\textbf{Senior Lecturer of Mathematics} \hfill Vanderbilt University \hfill August 2023 -- August 2024
+\begin{itemize}[leftmargin=1.5em]
+    \item Taught calculus, statistics, and survey courses (6 courses total)
+\end{itemize}
+
+\vspace{4pt}
+
+\section*{Projects}
+
+\textbf{Data Pipeline Architecture} \\
+Evaluated and implemented GCS $\rightarrow$ BigQuery pipeline from scratch. Assessed multiple approaches (AWS Athena/Glue, DuckDB, MongoDB) before selecting GCP BigQuery based on scalability and cost requirements.
+
+\textbf{Dynamic Data Visualization} \\
+Created local database in Microsoft SQL Server and connected to dynamic visualization web app using Dash and Flask.
+
+\textbf{Containerized ML Deployment} \\
+Deployed machine learning models on Amazon ECS as containerized web applications.
+
+\vspace{4pt}
+
+\section*{Publication}
+
+C. H. Conley, W. Goode. ``An approach to annihilators in the context of vector field Lie algebras.'' \textit{Expositiones Mathematicae} (2024). arXiv:2403.01728
+
+\end{document}
+
