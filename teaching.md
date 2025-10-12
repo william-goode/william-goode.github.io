@@ -9,7 +9,7 @@ I have taught mathematics at the university level from 2014 to 2024, covering co
 ---
 
 ## Vanderbilt University
-### Instructor (2023-2024)
+### Instructor of Record (2023-2024)
 
 #### MATH 1100: Survey of Calculus
 **3 courses taught**  
@@ -68,7 +68,7 @@ Second course in calculus covering techniques of integration, applications of in
 ## University of North Texas
 ### Undergraduate Teaching Assistant (2014-2017)
 
-Course logistics, grading, and student support.
+Led recitation sections, managed course logistics, grading, and student support.
 
 ---
 
