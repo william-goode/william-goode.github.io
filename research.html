@@ -1,0 +1,67 @@
+---
+layout: page
+title: Research
+permalink: /research/
+---
+
+<div class="research-intro">
+  <p>My research focuses on representations of infinite-dimensional Lie algebras and superalgebras of vector fields. I develop methods for describing annihilators of modules under conditions that arise in tensor modules of vector field Lie algebras.</p>
+
+  <h3>Publications</h3>
+  <ul>
+    <li>C. H. Conley, W. Goode. "An approach to annihilators in the context of vector field Lie algebras." <em>Expositiones Mathematicae</em> (2024). <a href="https://arxiv.org/abs/2403.01728" target="_blank">arXiv:2403.01728</a></li>
+  </ul>
+
+  <h3>Presentations</h3>
+  <ul>
+    <li>Joint Mathematics Meeting, Boston (2023)</li>
+    <li>Graduate Algebra Symposium, UT Arlington (2022)</li>
+    <li>Southwest Local Algebra Meeting, Baylor University (2022)</li>
+    <li>University of North Texas Algebra Seminar (2021-2022)</li>
+  </ul>
+</div>
+
+<style>
+  .research-intro {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #40444B;
+  }
+  
+  .research-intro h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .research-intro ul {
+    margin-left: 2rem;
+  }
+  
+  .research-intro li {
+    margin-bottom: 0.5rem;
+  }
+</style>
+
+<h2>Articles</h2>
+
+<div class="articles-list">
+  {% for post in site.posts %}
+    <article class="article-card">
+      <time class="article-date">{{ post.date | date: "%B %d, %Y" }}</time>
+      <h3 class="article-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h3>
+      {% if post.excerpt %}
+        <p class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+      {% if post.tags %}
+        <div class="article-tags">
+          {% for tag in post.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
+

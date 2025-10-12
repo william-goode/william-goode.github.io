@@ -21,84 +21,35 @@ GPA: 3.79, Cum Laude
 
 ---
 
-## Research
+## Personal Interests
 
-My research focuses on representations of infinite-dimensional Lie algebras and superalgebras of vector fields. I develop methods for describing annihilators of modules under conditions that arise in tensor modules of vector field Lie algebras.
+### Gaming
 
-**Publications:**
-- C. H. Conley, W. Goode. "An approach to annihilators in the context of vector field Lie algebras." *Expositiones Mathematicae* (2024). [arXiv:2403.01728](https://arxiv.org/abs/2403.01728)
+I play video games across various genres. Strategy games and RPGs take up most of my gaming time, though I appreciate well-crafted games of any type.
 
-**Presentations:**
-- Joint Mathematics Meeting, Boston (2023)
-- Graduate Algebra Symposium, UT Arlington (2022)
-- Southwest Local Algebra Meeting, Baylor University (2022)
-- University of North Texas Algebra Seminar (2021-2022)
+### Early Work Experience
 
----
+During my undergraduate years, I worked as a bouncer at a bar in Denton and as a teaching assistant for mathematics courses. The bouncer work taught me to read situations quickly and handle conflict calmly. The teaching assistant position confirmed my interest in mathematics education and led to my graduate teaching work.
 
-## Current Work
+### Powerlifting
 
-**Backend Engineer**, Scaylor AI (August 2025 - Present)
+I competed in powerlifting from 2015 to 2019 in the USAPL. My best competition total was 1648 lbs (617 lb squat, 397 lb bench, 634 lb deadlift) at 262 lbs bodyweight. I competed at several regional and national meets, including USAPL Collegiate Nationals. My full competition history is available on [OpenPowerlifting](https://www.openpowerlifting.org/u/williamgoode).
 
-I develop cloud infrastructure and data pipelines for an AI-powered business intelligence platform. Work includes:
+### Cycling and Yoga
 
-- Architect data ingestion systems for client database integration
-- Develop microservices for SQL generation and query execution
-- Design data workflows compliant with GDPR requirements
-- Manage security and access provisioning
-- Serve as technical point of contact for client onboarding
+I now focus on cycling and yoga rather than powerlifting. I ride regularly and find that cycling provides both physical exercise and mental clarity. Yoga complements this by improving flexibility and body awareness, which I lost during years of heavy lifting.
 
-**Previous Positions:**
-- Software Engineer, Concan Consulting Corporation (April - June 2025)
-- Senior Lecturer, Vanderbilt University (2023-2024)
-- Graduate Teaching Fellow, University of North Texas (2017-2023)
-
----
-
-## Technical Skills
-
-<div class="skills-list">
-  {% for skill_category in site.data.cv.skills %}
-    <div class="skill-category">
-      <h3>{{ skill_category.category }}</h3>
-      <ul>
-        {% for skill in skill_category.items %}
-          <li>{{ skill }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="{{ '/assets/images/bike.jpg' | relative_url }}" alt="My bike" style="max-width: 100%; height: auto; border-radius: 6px;">
 </div>
 
-<style>
-  .skills-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-  }
-  
-  .skill-category h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #DCDDDE;
-  }
-  
-  .skill-category ul {
-    list-style: none;
-    margin-left: 0;
-  }
-  
-  .skill-category li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #2C2F33;
-    color: #B9BBBE;
-  }
-  
-  .skill-category li:last-child {
-    border-bottom: none;
-  }
-</style>
+### Hiking
+
+I enjoy hiking when I can. I climbed Mt. Fuji in 2024, reaching the summit at sunrise. The climb itself was straightforward, but the altitude and cold were challenging.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="{{ '/assets/images/fuji.jpg' | relative_url }}" alt="Near the summit of Mt. Fuji" style="max-width: 100%; height: auto; border-radius: 6px;">
+</div>
 
 ---
 
@@ -107,4 +58,3 @@ I develop cloud infrastructure and data pipelines for an AI-powered business int
 **Email**: [{{ site.author.email }}](mailto:{{ site.author.email }})  
 **GitHub**: [github.com/william-goode](https://github.com/william-goode)  
 **LinkedIn**: [linkedin.com/in/william-goode](https://linkedin.com/in/william-goode)
-
