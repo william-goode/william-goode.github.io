@@ -20,7 +20,7 @@ Academic curriculum vitae including research, publications, presentations, and t
 
 Software engineering resume highlighting technical skills, projects, and work experience.
 
-<a href="{{ '/resumes/William_Goode_Resume_P.pdf' | relative_url }}" class="download-button" download>
+<a href="{{ '/resumes/William_Goode_Resume_Professional.pdf' | relative_url }}" class="download-button" download>
   Download Professional Resume (PDF)
 </a>
 
