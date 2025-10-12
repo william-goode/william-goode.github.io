@@ -205,10 +205,7 @@ skills:
 
   - category: "Machine Learning & AI"
     items:
-      - "SQL generation with LLMs"
-      - "ML prototyping (schema reconciliation)"
-      - "scikit-learn"
-      - "pandas"
+      - "LLM integration for data workflows"
 
   - category: "Mathematics"
     items:

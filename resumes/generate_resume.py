@@ -167,7 +167,7 @@ story.append(Paragraph(
 ))
 story.append(Spacer(1, 2))
 story.append(Paragraph(
-    "<b>Machine Learning:</b> SQL generation with LLMs, ML prototyping, scikit-learn, pandas",
+    "<b>Machine Learning:</b> LLM integration for data workflows",
     body_style
 ))
 
