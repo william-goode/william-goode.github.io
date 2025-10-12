@@ -66,7 +66,7 @@ FastAPI, ASP.NET Core, Entity Framework
 Data pipeline development, Vector databases, DuckDB, MongoDB, Query optimization and performance tuning, Exploratory data analysis, Schema reconciliation
 
 **Machine Learning & AI**  
-SQL generation with LLMs, ML prototyping (schema reconciliation), scikit-learn, pandas
+LLM integration for data workflows
 
 **Mathematics**  
 Abstract algebra, Representation theory, Lie algebras and superalgebras
