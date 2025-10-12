@@ -7,38 +7,42 @@ layout: default
   <p>Mathematician and software engineer.</p>
 </section>
 
-<section class="recent-articles">
-  <h2>Recent Articles</h2>
+<section class="overview">
+  <h2>Overview</h2>
   
-  {% assign recent_posts = site.posts | limit: 3 %}
-  {% if recent_posts.size > 0 %}
-    <div class="articles-list">
-      {% for post in recent_posts %}
-        <article class="article-card">
-          <time class="article-date">{{ post.date | date: "%B %d, %Y" }}</time>
-          <h3 class="article-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-          {% if post.excerpt %}
-            <p class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-          {% endif %}
-          {% if post.tags %}
-            <div class="article-tags">
-              {% for tag in post.tags %}
-                <span class="tag">{{ tag }}</span>
-              {% endfor %}
-            </div>
-          {% endif %}
-        </article>
-      {% endfor %}
+  <div class="overview-grid">
+    <div class="overview-section">
+      <h3>Education</h3>
+      <p><strong>Ph.D. in Mathematics</strong><br>
+      University of North Texas, 2023<br>
+      Focus: Representations of infinite-dimensional Lie algebras</p>
+      
+      <p><strong>B.S. in Mathematics & Economics</strong><br>
+      University of North Texas, 2017</p>
     </div>
     
-    <div style="text-align: center; margin-top: 2rem;">
-      <a href="{{ '/articles' | relative_url }}" style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 500;">View all articles →</a>
+    <div class="overview-section">
+      <h3>Current Work</h3>
+      <p><strong>Backend Engineer</strong><br>
+      Scaylor AI<br>
+      August 2025 - Present</p>
+      
+      <p>Develop cloud infrastructure and data pipelines for AI-powered business intelligence platform using AWS, GCP, FastAPI, and BigQuery.</p>
     </div>
-  {% else %}
-    <p style="text-align: center; color: #a6adc8;">No articles yet.</p>
-  {% endif %}
+  </div>
+  
+  <div class="overview-section">
+    <h3>Research</h3>
+    <p>My research focuses on representations of infinite-dimensional Lie algebras and superalgebras of vector fields. I develop methods for describing annihilators of modules under conditions that arise in tensor modules of vector field Lie algebras.</p>
+    
+    <p><strong>Published:</strong> C. H. Conley, W. Goode. "An approach to annihilators in the context of vector field Lie algebras." <em>Expositiones Mathematicae</em> (2024). <a href="https://arxiv.org/abs/2403.01728" target="_blank">arXiv:2403.01728</a></p>
+  </div>
+  
+  <div style="text-align: center; margin-top: 2rem;">
+    <a href="{{ '/about' | relative_url }}" class="overview-link">More about me →</a>
+    <a href="{{ '/cv' | relative_url }}" class="overview-link">View CV →</a>
+    <a href="{{ '/resume' | relative_url }}" class="overview-link">Download resume →</a>
+  </div>
 </section>
 
 <div class="ornament"></div>

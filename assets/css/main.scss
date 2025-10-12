@@ -632,6 +632,80 @@ a {
   }
 }
 
+// Overview Section (for home page)
+.overview {
+  margin-bottom: $spacing-lg;
+
+  h2 {
+    text-align: center;
+    margin-bottom: $spacing-md;
+  }
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-md;
+  margin-bottom: $spacing-md;
+
+  @media (max-width: $breakpoint-mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.overview-section {
+  background-color: $surface0;
+  padding: $spacing-md;
+  border-radius: 6px;
+  border: 1px solid $surface1;
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: $spacing-sm;
+    color: $text;
+  }
+
+  p {
+    color: $subtext1;
+    line-height: 1.6;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  strong {
+    color: $text;
+  }
+
+  a {
+    color: $text;
+    text-decoration: underline;
+    text-decoration-color: $overlay0;
+
+    &:hover {
+      text-decoration-color: $subtext1;
+    }
+  }
+}
+
+.overview-link {
+  display: inline-block;
+  margin: 0 $spacing-sm;
+  padding: $spacing-xs $spacing-sm;
+  color: $text;
+  font-family: $font-body;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid $overlay0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-bottom-color: $subtext1;
+  }
+}
+
 // Decorative elements
 .ornament {
   text-align: center;
