@@ -9,14 +9,13 @@ During my undergraduate years, I worked as a bouncer at the Fry Street Tavern in
 
 I competed in powerlifting from 2015 to 2019 in the USAPL. My best competition total was 1648 lbs (617 lb squat, 397 lb bench, 634 lb deadlift) at 262 lbs bodyweight. I competed at several regional and national meets, including USAPL Collegiate Nationals. My full competition history is available on [OpenPowerlifting](https://www.openpowerlifting.org/u/williamgoode).
 
-These days, I mostly stick to cycling and yoga. Below is my 2020 Trek Domane ALR4, which I regularly abuse.
+These days, I mostly stick to cycling and yoga. Below is my 2020 Trek Domane ALR 4, which I regularly abuse.
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="{{ '/assets/images/bike.jpg' | relative_url }}" alt="My bike" style="max-width: 100%; height: auto; border-radius: 6px;">
 </div>
 
-
-I hike when I can. I climbed most of Mt. Fuji in 2024, reaching the summit at sunrise. We were turned away near the summit due to weather, but I managed to get a pretty good shot before the clouds closed up on us again.
+I hike when I can. I climbed most of Mt. Fuji in 2024. We were turned away near the summit due to weather, but I managed to get a pretty good shot before the clouds closed up on us again.
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="{{ '/assets/images/fuji.jpg' | relative_url }}" alt="Near the summit of Mt. Fuji" style="max-width: 100%; height: auto; border-radius: 6px;">
