@@ -25,3 +25,6 @@ Thumbs.db
 *.swo
 *~
 
+# Internal reference files
+.skills-reference.yml
+

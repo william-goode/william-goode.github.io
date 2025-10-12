@@ -177,57 +177,42 @@ skills:
   - category: "Programming Languages"
     items:
       - "Python"
-      - "SQL (MS SQL Server, BigQuery, PostgreSQL)"
+      - "SQL (BigQuery, MS SQL Server, PostgreSQL)"
       - "C# / .NET"
-      - "JavaScript / TypeScript"
-      - "R"
-  
+
   - category: "Cloud & Infrastructure"
     items:
-      - "AWS (Lambda, S3, RDS, Athena, Glue, Redshift)"
+      - "AWS (Lambda, S3, RDS, Athena)"
       - "GCP (BigQuery, Cloud Storage, Cloud Run, IAM)"
-      - "Docker / Containerization"
-      - "Database Migrations & ETL Pipelines"
-  
-  - category: "Backend & APIs"
+      - "Docker"
+      - "Data ingestion pipelines"
+
+  - category: "Backend"
     items:
       - "FastAPI"
       - "ASP.NET Core"
-      - "REST API Development"
-      - "Microservices Architecture"
       - "Entity Framework"
-      - "Flask / Dash"
-  
+
   - category: "Data Engineering & Databases"
     items:
-      - "Data Pipeline Architecture"
-      - "Vector Databases"
-      - "DuckDB / MongoDB"
-      - "Query Optimization & Performance Tuning"
-      - "Exploratory Data Analysis (EDA)"
-      - "Schema Design & Reconciliation"
-  
+      - "Data pipeline development"
+      - "Vector databases"
+      - "DuckDB"
+      - "MongoDB"
+      - "Query optimization and performance tuning"
+      - "Exploratory data analysis"
+      - "Schema reconciliation"
+
   - category: "Machine Learning & AI"
     items:
-      - "ML Model Prototyping (Classification, Detection)"
-      - "SQL Generation with LLMs"
-      - "Time-Series Forecasting (ARIMA)"
-      - "scikit-learn / pandas"
-      - "Statistical Analysis"
-  
-  - category: "Additional Skills"
-    items:
-      - "GDPR Compliance & Data Regulation"
-      - "Technical Documentation"
-      - "Client Integration & Communication"
-      - "Technical Interviewing & Hiring"
-      - "React / Frontend Integration"
-  
+      - "SQL generation with LLMs"
+      - "ML prototyping (schema reconciliation)"
+      - "scikit-learn"
+      - "pandas"
+
   - category: "Mathematics"
     items:
-      - "Abstract Algebra"
-      - "Representation Theory"
-      - "Lie Algebras & Superalgebras"
-      - "Differential Geometry"
-      - "Probability & Statistics"
+      - "Abstract algebra"
+      - "Representation theory"
+      - "Lie algebras and superalgebras"
 
