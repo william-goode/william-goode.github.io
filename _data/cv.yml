@@ -24,18 +24,18 @@ experience:
   description: Data engineering and cloud infrastructure development for AI-powered
     business intelligence platform.
   highlights:
-  - Engineered and deployed a GDPR-compliant data ingestion infrastructure on Google
-    Cloud Platform using Terraform, incorporating Customer-Managed Encryption Keys
-    (CMEK) and EU-only resource location policies to ensure data residency and security.
-  - Led the development and implementation of a Natural Language to SQL (NL→SQL) microservice
-    on Google Cloud Run using Vertex AI, incorporating a two-phase flow for schema
-    extraction, dataset-aware prompt formatting, and comprehensive security validation.
-  - Designed and developed a unified data tooling system featuring a Cursor-like IDE
-    interface, integrating schema reconciliation, conflict resolution, and AI-powered
-    data analysis capabilities.
-  - Architected and executed infrastructure migration projects, including the consolidation
-    of 18 GCP projects to a master billing account and the implementation of Workload
-    Identity Federation for secure, least-privilege access to data resources.
+  - Developed and deployed a GDPR-compliant data ingestion infrastructure on Google
+    Cloud Platform using Terraform, including Shared VPC, Customer-Managed Encryption
+    Keys (CMEK), and EU-only resource location policies.
+  - Designed and implemented a scalable data workflow from Google Cloud Storage (GCS)
+    to BigQuery, leveraging FastAPI for API development, Docker for containerization,
+    and Google Cloud Run for serverless deployment.
+  - Led the development of an NL→SQL pipeline using Vertex AI, schema extraction,
+    and dataset-aware prompt formatting, ensuring SQL safety through validation, cost
+    checks, and PII masking.
+  - Architected and built a unified data tooling system, featuring a Cursor-like IDE
+    with ERD visualization, a streaming chat agent, and notebook execution capabilities,
+    optimizing performance through caching and asynchronous operations.
 - date: Apr 2025 - Jun 2025
   title: Software Engineer
   organization: Concan Consulting Corporation
