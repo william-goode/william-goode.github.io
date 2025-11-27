@@ -8,6 +8,7 @@ Resume bullets are dynamically loaded from journal entries via LLM processing.
 import os
 import json
 import yaml
+from datetime import datetime
 from pathlib import Path
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -22,6 +23,7 @@ REPO_ROOT = SCRIPT_DIR.parent.parent
 OUTPUT_FILE = str(SCRIPT_DIR / "William_Goode_Resume_Professional.pdf")
 CV_YML_FILE = REPO_ROOT / "_data" / "cv.yml"
 RESUME_BULLETS_FILE = REPO_ROOT / ".generated" / "resume_bullets.json"  # Fallback only
+RESUME_METADATA_FILE = REPO_ROOT / "_data" / "resume.yml"
 
 # Professional color palette
 HEADER_COLOR = HexColor("#1a1a1a")
@@ -296,6 +298,18 @@ story.append(Paragraph(
 
 # Build PDF
 pdf.build(story)
+
+# Update resume metadata with current date
+try:
+    current_date = datetime.now().strftime("%B %d, %Y")
+    resume_metadata = {
+        'last_updated': current_date
+    }
+    with open(RESUME_METADATA_FILE, 'w', encoding='utf-8') as f:
+        yaml.dump(resume_metadata, f, indent=2, default_flow_style=False, allow_unicode=True)
+    print(f"✓ Resume metadata updated: {current_date}")
+except Exception as e:
+    print(f"Warning: Could not update resume metadata: {e}")
 
 print(f"✓ Resume generated: {OUTPUT_FILE}")
 
