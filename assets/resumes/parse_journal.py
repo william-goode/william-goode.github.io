@@ -12,7 +12,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent
 REPO_ROOT = SCRIPT_DIR.parent.parent
 JOURNAL_FILE = REPO_ROOT / "journal" / "20250811-current.md"
-OUTPUT_FILE = SCRIPT_DIR / "journal_summaries.txt"
+OUTPUT_FILE = REPO_ROOT / ".generated" / "journal_summaries.txt"
 
 
 def extract_scaylor_bullets(journal_content):

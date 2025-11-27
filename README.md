@@ -97,6 +97,7 @@ npm run jekyll:serve
 ├── _includes/            # Reusable components (nav, footer)
 ├── _posts/              # Blog articles
 ├── _data/               # Data files (CV, etc.)
+│   └── cv.yml          # CV/resume data (synced with resume PDF)
 ├── src/                 # React source code
 │   ├── index.js
 │   └── components/
@@ -105,12 +106,24 @@ npm run jekyll:serve
 ├── assets/
 │   ├── css/
 │   │   └── main.scss    # Styles
-│   └── js/
-│       └── components.js  # Webpack output (generated)
+│   ├── js/
+│   │   └── components.js  # Webpack output (generated)
+│   ├── resumes/         # Resume generation scripts
+│   │   ├── generate_resume.py
+│   │   ├── generate_resume_bullets.py
+│   │   └── parse_journal.py
+│   └── images/          # Images
+├── journal/             # Weekly work journal
+│   └── 20250811-current.md
+├── docs/                # Documentation
+│   ├── WEEKLY_UPDATE_WORKFLOW.md
+│   ├── SETUP_GUIDE.md
+│   └── reference/       # Internal reference files
+├── .generated/          # Generated files (gitignored)
 ├── index.html           # Home page
 ├── about.md             # About page
-├── articles.html        # Articles archive
-└── cv.html              # CV page
+├── cv.html              # CV page
+└── engineering.md       # Engineering page
 ```
 
 ## Customization

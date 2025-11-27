@@ -21,7 +21,7 @@ SCRIPT_DIR = Path(__file__).parent
 REPO_ROOT = SCRIPT_DIR.parent.parent
 OUTPUT_FILE = str(SCRIPT_DIR / "William_Goode_Resume_Professional.pdf")
 CV_YML_FILE = REPO_ROOT / "_data" / "cv.yml"
-RESUME_BULLETS_FILE = SCRIPT_DIR / "resume_bullets.json"  # Fallback only
+RESUME_BULLETS_FILE = REPO_ROOT / ".generated" / "resume_bullets.json"  # Fallback only
 
 # Professional color palette
 HEADER_COLOR = HexColor("#1a1a1a")
@@ -31,14 +31,14 @@ TEXT_COLOR = HexColor("#2d3748")     # Dark gray
 LIGHT_TEXT = HexColor("#4a5568")     # Lighter gray for secondary text
 LINK_COLOR = HexColor("#2b6cb0")     # Professional blue
 
-# Create PDF with generous margins
+# Create PDF with optimized margins for single page
 pdf = SimpleDocTemplate(
     OUTPUT_FILE,
     pagesize=letter,
-    rightMargin=0.7*inch,
-    leftMargin=0.7*inch,
-    topMargin=0.65*inch,
-    bottomMargin=0.65*inch,
+    rightMargin=0.6*inch,
+    leftMargin=0.6*inch,
+    topMargin=0.5*inch,
+    bottomMargin=0.5*inch,
 )
 
 # Styles
@@ -59,22 +59,22 @@ title_style = ParagraphStyle(
 contact_style = ParagraphStyle(
     'Contact',
     parent=styles['Normal'],
-    fontSize=10,
+    fontSize=9.5,
     textColor=LIGHT_TEXT,
     alignment=TA_CENTER,
-    spaceAfter=18,
-    leading=14,
+    spaceAfter=12,
+    leading=13,
 )
 
 section_style = ParagraphStyle(
     'Section',
     parent=styles['Heading2'],
-    fontSize=13,
+    fontSize=12.5,
     textColor=SECTION_COLOR,
-    spaceBefore=16,
-    spaceAfter=8,
+    spaceBefore=10,
+    spaceAfter=6,
     fontName='Helvetica-Bold',
-    leading=16,
+    leading=15,
     leftIndent=0,
     underlineProportion=0.15,
 )
@@ -96,7 +96,7 @@ company_style = ParagraphStyle(
     textColor=LIGHT_TEXT,
     fontName='Helvetica-Oblique',
     leading=13,
-    spaceAfter=6,
+    spaceAfter=4,
 )
 
 body_style = ParagraphStyle(
@@ -104,9 +104,9 @@ body_style = ParagraphStyle(
     parent=styles['Normal'],
     fontSize=10,
     textColor=TEXT_COLOR,
-    leading=14,
+    leading=13,
     leftIndent=0,
-    spaceAfter=3,
+    spaceAfter=2,
     alignment=TA_JUSTIFY,
 )
 
@@ -115,10 +115,10 @@ bullet_style = ParagraphStyle(
     parent=styles['Normal'],
     fontSize=9.5,
     textColor=TEXT_COLOR,
-    leading=13,
+    leading=12,
     leftIndent=18,
     bulletIndent=6,
-    spaceAfter=4,
+    spaceAfter=3,
     firstLineIndent=0,
 )
 
@@ -137,7 +137,7 @@ story.append(Paragraph(
 
 # Education
 story.append(Paragraph("EDUCATION", section_style))
-story.append(HRFlowable(width="100%", thickness=0.5, color=SECTION_COLOR, spaceAfter=8))
+story.append(HRFlowable(width="100%", thickness=0.5, color=SECTION_COLOR, spaceAfter=6))
 
 story.append(Paragraph("<b>Ph.D. in Mathematics</b>", job_title_style))
 story.append(Paragraph("University of North Texas | 2023", company_style))
@@ -146,11 +146,12 @@ story.append(Paragraph(
     body_style
 ))
 story.append(Paragraph("4.0 GPA | Published in <i>Expositiones Mathematicae</i>", body_style))
-story.append(Spacer(1, 8))
+story.append(Spacer(1, 5))
 
 story.append(Paragraph("<b>B.S. in Mathematics, B.S. in Economics</b>", job_title_style))
 story.append(Paragraph("University of North Texas | 2017", company_style))
 story.append(Paragraph("3.79 GPA, Cum Laude", body_style))
+story.append(Spacer(1, 2))
 
 # Load technical skills from cv.yml
 def load_technical_skills():
@@ -189,7 +190,7 @@ def load_technical_skills():
 
 # Technical Skills
 story.append(Paragraph("TECHNICAL SKILLS", section_style))
-story.append(HRFlowable(width="100%", thickness=0.5, color=SECTION_COLOR, spaceAfter=8))
+story.append(HRFlowable(width="100%", thickness=0.5, color=SECTION_COLOR, spaceAfter=6))
 
 technical_skills = load_technical_skills()
 
@@ -217,11 +218,11 @@ for skill_category in technical_skills:
             f"<b>{resume_category}:</b> {items_str}",
             body_style
         ))
-        story.append(Spacer(1, 2))
+        story.append(Spacer(1, 1))
 
 # Experience
 story.append(Paragraph("EXPERIENCE", section_style))
-story.append(HRFlowable(width="100%", thickness=0.5, color=SECTION_COLOR, spaceAfter=8))
+story.append(HRFlowable(width="100%", thickness=0.5, color=SECTION_COLOR, spaceAfter=6))
 
 # Load Scaylor resume bullets from cv.yml (synced with website)
 def load_resume_bullets():
@@ -273,12 +274,12 @@ story.append(Paragraph("Scaylor AI | August 2025 – Present", company_style))
 scaylor_bullets = load_resume_bullets()
 for bullet in scaylor_bullets:
     story.append(Paragraph(f"• {bullet}", bullet_style))
-story.append(Spacer(1, 10))
+story.append(Spacer(1, 6))
 
 # Concan (title only, no bullets)
 story.append(Paragraph("<b>Software Engineer</b>", job_title_style))
 story.append(Paragraph("Concan Consulting Corporation | April – June 2025", company_style))
-story.append(Spacer(1, 10))
+story.append(Spacer(1, 6))
 
 # Vanderbilt (title only, no bullets)
 story.append(Paragraph("<b>Senior Lecturer of Mathematics</b>", job_title_style))
@@ -286,7 +287,7 @@ story.append(Paragraph("Vanderbilt University | August 2023 – August 2024", co
 
 # Publication
 story.append(Paragraph("PUBLICATION", section_style))
-story.append(HRFlowable(width="100%", thickness=0.5, color=SECTION_COLOR, spaceAfter=8))
+story.append(HRFlowable(width="100%", thickness=0.5, color=SECTION_COLOR, spaceAfter=6))
 story.append(Paragraph(
     'C. H. Conley, W. Goode. "An approach to annihilators in the context of vector field Lie algebras." '
     '<i>Expositiones Mathematicae</i> (2024). arXiv:2403.01728',

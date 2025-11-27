@@ -28,3 +28,9 @@ Thumbs.db
 .skills-reference.yml
 work-log.md
 
+# Generated files
+.generated/*
+!.generated/.gitkeep
+*.pyc
+__pycache__/
+

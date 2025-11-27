@@ -24,18 +24,18 @@ experience:
   description: Data engineering and cloud infrastructure development for AI-powered
     business intelligence platform.
   highlights:
-  - Designed, developed, and deployed a scalable data ingestion infrastructure on
-    GCP using Terraform, ensuring GDPR compliance with EU-only resource policies,
-    CMEK encryption, and secure IAM configurations.
-  - Led the development of an NL→SQL pipeline leveraging Vertex AI for schema extraction
-    and dataset-aware prompt formatting, enhancing SQL safety through validation and
-    BigQuery cost checks.
-  - Architected and implemented a unified data tooling system with a Cursor-like IDE
-    interface, enabling AI-powered data analysis, schema reconciliation, and conflict
-    resolution.
-  - Engineered and deployed Workload Identity Federation across 18 GCP projects, securing
-    customer access to data buckets and consolidating billing to a master account
-    via Terraform and gcloud.
+  - Designed, developed, and deployed a GDPR-compliant data ingestion infrastructure
+    on GCP using Terraform, encompassing networking, encryption, and IAM configurations
+    to ensure data residency and security.
+  - Architected and implemented a scalable NL→SQL pipeline on Google Cloud Run, leveraging
+    Vertex AI and BigQuery for multi-dataset support, query validation, cost control,
+    and unified CSV export.
+  - Led the development of a data unification platform featuring a Cursor-like IDE,
+    ERD visualization, and streaming chat agent, enabling AI-powered schema reconciliation
+    and data analysis.
+  - Spearheaded the secure ModWash POS data integration, encompassing Terraform infrastructure,
+    Dockerized SQL Server processing, and Workload Identity Federation, achieving
+    a 91.8% data match rate after temporal filtering.
 - date: Apr 2025 - Jun 2025
   title: Software Engineer
   organization: Concan Consulting Corporation
