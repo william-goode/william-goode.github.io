@@ -58,7 +58,8 @@ CRITICAL SECURITY REQUIREMENT:
 - NEVER include customer names, client names, or any identifying information about customers/clients
 - Use generic terms like "client", "customer", "enterprise client", or "data source" instead
 - Do not mention specific company names, product names, or any information that could identify a customer
-- This is a public resume - customer confidentiality is paramount
+- Do not mention specific product interfaces or UI paradigms (e.g., "IDE", "Cursor-like", etc.) - use generic terms like "platform", "tooling system", "interface"
+- This is a public resume - customer confidentiality and product confidentiality are paramount
 
 The following text contains all accomplishments from August 2025 to November 2025 at Scaylor AI:
 

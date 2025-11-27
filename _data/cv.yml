@@ -24,18 +24,18 @@ experience:
   description: Data engineering and cloud infrastructure development for AI-powered
     business intelligence platform.
   highlights:
-  - Developed and deployed a GDPR-compliant data ingestion infrastructure on Google
-    Cloud Platform using Terraform, including Shared VPC, Customer-Managed Encryption
-    Keys (CMEK), and EU-only resource location policies.
-  - Designed and implemented a scalable data workflow from Google Cloud Storage (GCS)
-    to BigQuery, leveraging FastAPI for API development, Docker for containerization,
-    and Google Cloud Run for serverless deployment.
-  - Led the development of an NL→SQL pipeline using Vertex AI, schema extraction,
-    and dataset-aware prompt formatting, ensuring SQL safety through validation, cost
-    checks, and PII masking.
-  - Architected and built a unified data tooling system, featuring a Cursor-like IDE
-    with ERD visualization, a streaming chat agent, and notebook execution capabilities,
-    optimizing performance through caching and asynchronous operations.
+  - Designed and implemented a secure, GDPR-compliant data ingestion infrastructure
+    on Google Cloud Platform using Terraform, encompassing Shared VPC, Customer-Managed
+    Encryption Keys, and EU-only resource location policies.
+  - Developed a core NL→SQL pipeline leveraging Vertex AI for schema extraction and
+    dataset-aware prompt formatting, incorporating multi-layer validation, PII masking,
+    and deployed as a FastAPI microservice on Google Cloud Run.
+  - Led the creation of a modular data processing pipeline for diverse data sources,
+    including data format standardization, data integrity profiling, conflict resolution
+    workflows, and automated processing of 272 tables in under 5 minutes.
+  - Architected and initiated development of a unified data tooling system, including
+    data merging, schema reconciliation, conflict resolution, and AI-powered data
+    analysis interface with notebook execution capabilities.
 - date: Apr 2025 - Jun 2025
   title: Software Engineer
   organization: Concan Consulting Corporation
