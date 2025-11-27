@@ -28,6 +28,9 @@ Thumbs.db
 .skills-reference.yml
 work-log.md
 
+# Environment variables (contains API keys)
+.env
+
 # Generated files
 .generated/*
 !.generated/.gitkeep
