@@ -54,6 +54,12 @@ def generate_resume_bullets(summaries_text, api_key):
     
     prompt = f"""You are analyzing work accomplishments from a backend engineer's weekly journal entries.
 
+CRITICAL SECURITY REQUIREMENT: 
+- NEVER include customer names, client names, or any identifying information about customers/clients
+- Use generic terms like "client", "customer", "enterprise client", or "data source" instead
+- Do not mention specific company names, product names, or any information that could identify a customer
+- This is a public resume - customer confidentiality is paramount
+
 The following text contains all accomplishments from August 2025 to November 2025 at Scaylor AI:
 
 {summaries_text}
@@ -65,11 +71,12 @@ Your task: Generate exactly 4 high-impact resume bullet points that:
 4. Are concise but impactful (one sentence each)
 5. Show progression and increasing responsibility
 6. Highlight technical depth (cloud infrastructure, data pipelines, security, etc.)
+7. NEVER mention customer names, client names, or any identifying information
 
 Format: Return ONLY a JSON array of exactly 4 strings, no other text:
 ["bullet point 1", "bullet point 2", "bullet point 3", "bullet point 4"]
 
-Example format:
+Example format (note: no customer names):
 ["Architected and deployed GDPR-compliant data ingestion infrastructure using Terraform across EU regions", "Developed and deployed NL→SQL microservice on Google Cloud Run with multi-dataset support and security validation", "Built unified data tooling system with Cursor-like IDE interface for schema reconciliation and AI-powered analysis", "Led infrastructure migration projects including billing account consolidation and Workload Identity Federation for secure customer access"]
 """
     
