@@ -15,8 +15,8 @@ from dotenv import load_dotenv
 SCRIPT_DIR = Path(__file__).parent
 REPO_ROOT = SCRIPT_DIR.parent.parent
 ENV_FILE = REPO_ROOT / ".env"
-SUMMARIES_FILE = SCRIPT_DIR / "journal_summaries.txt"
-OUTPUT_FILE = SCRIPT_DIR / "resume_bullets.json"
+SUMMARIES_FILE = REPO_ROOT / ".generated" / "journal_summaries.txt"
+OUTPUT_FILE = REPO_ROOT / ".generated" / "resume_bullets.json"
 CV_YML_FILE = REPO_ROOT / "_data" / "cv.yml"
 
 
