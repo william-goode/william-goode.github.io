@@ -8,7 +8,7 @@ permalink: /cv/
   <div class="download-grid">
     <div class="download-card">
       <h3>Professional Resume</h3>
-      <p class="download-meta">Updated: October 12, 2025</p>
+      <p class="download-meta">Updated: {{ site.data.resume.last_updated | default: "Recently" }}</p>
       <a href="{{ '/assets/resumes/William_Goode_Resume_Professional.pdf' | relative_url }}" class="download-button" download>
         Download PDF
       </a>
