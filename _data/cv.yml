@@ -24,19 +24,18 @@ experience:
   description: Data engineering and cloud infrastructure development for AI-powered
     business intelligence platform.
   highlights:
-  - Designed and implemented a secure, scalable data ingestion and processing pipeline
-    on Google Cloud Platform, incorporating Terraform, Customer-Managed Encryption
-    Keys (CMEK), and PII handling, and ensuring GDPR compliance within EU regions.
-  - Developed and deployed a natural language to SQL (NL→SQL) service utilizing Vertex
-    AI for semantic parsing, schema extraction, and multi-dataset support, integrated
-    with BigQuery and secured with multi-layer validation and PII masking.
-  - Architected and built a data unification tooling system featuring a rich interface
-    for data merging, schema reconciliation, and AI-powered data analysis, enhanced
-    with streaming chat functionality and comprehensive table context.
-  - Led migration and infrastructure stabilization projects, including billing account
-    consolidation, Workload Identity Federation for secure data source access, and
-    performance optimizations achieving 78% compression and 4.5x faster loading of
-    critical datasets.
+  - Developed and deployed a NL→SQL microservice on Google Cloud Run, featuring multi-dataset
+    support, schema extraction, and robust security validation including PII masking
+    and injection detection.
+  - Architected and implemented a GDPR-compliant data ingestion infrastructure using
+    Terraform, including EU-only resource policies, customer-managed encryption keys
+    (CMEK), and secure network configuration.
+  - Built a data unification tooling system for schema reconciliation and conflict
+    resolution, incorporating a multi-panel interface, ERD visualization, streaming
+    chat agent, and notebook execution capabilities.
+  - Led multiple infrastructure migration projects, including billing account consolidation,
+    Workload Identity Federation for secure data source access, and migration of 18
+    GCP projects using Terraform.
 - date: Apr 2025 - Jun 2025
   title: Software Engineer
   organization: Concan Consulting Corporation
