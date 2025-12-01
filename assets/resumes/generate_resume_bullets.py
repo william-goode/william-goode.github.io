@@ -78,7 +78,7 @@ Format: Return ONLY a JSON array of exactly 4 strings, no other text:
 ["bullet point 1", "bullet point 2", "bullet point 3", "bullet point 4"]
 
 Example format (note: no customer names):
-["Architected and deployed GDPR-compliant data ingestion infrastructure using Terraform across EU regions", "Developed and deployed NL→SQL microservice on Google Cloud Run with multi-dataset support and security validation", "Built unified data tooling system with Cursor-like IDE interface for schema reconciliation and AI-powered analysis", "Led infrastructure migration projects including billing account consolidation and Workload Identity Federation for secure customer access"]
+["Architected and deployed GDPR-compliant data ingestion infrastructure using Terraform across EU regions", "Developed and deployed NL→SQL microservice on Google Cloud Run with multi-dataset support and security validation", "Built unified data tooling platform for schema reconciliation and AI-powered analysis with multi-panel workspace interface", "Led infrastructure migration projects including billing account consolidation and Workload Identity Federation for secure customer access"]
 """
     
     try:
