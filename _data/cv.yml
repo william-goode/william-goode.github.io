@@ -24,18 +24,14 @@ experience:
   description: Data engineering and cloud infrastructure development for AI-powered
     business intelligence platform.
   highlights:
-  - Developed and deployed a NL→SQL microservice on Google Cloud Run, featuring multi-dataset
-    support, schema extraction, and robust security validation including PII masking
-    and injection detection.
-  - Architected and implemented a GDPR-compliant data ingestion infrastructure using
-    Terraform, including EU-only resource policies, customer-managed encryption keys
-    (CMEK), and secure network configuration.
-  - Built a data unification tooling system for schema reconciliation and conflict
-    resolution, incorporating a multi-panel interface, ERD visualization, streaming
-    chat agent, and notebook execution capabilities.
-  - Led multiple infrastructure migration projects, including billing account consolidation,
-    Workload Identity Federation for secure data source access, and migration of 18
-    GCP projects using Terraform.
+  - Shipped a schema-aware NL→SQL service on GCP with validation, safety, and streaming responses.
+  - Deployed a GDPR-aligned cloud stack with VPC controls, CMEK, secrets, audit policies, and regional enforcement.
+  - Split data workloads into dedicated extraction, merge, backend, and analytics repos with Dockerized deploys.
+  - Built extraction CLI pipelines (discover, restore, export, cleanup) with reproducible runs.
+  - Created a FastAPI backend with table context, ERD, SQL editor, notebook execution, and streaming chat; packaged with CLI and Docker.
+  - Developed analytics views for timelines, churn, and at-risk reporting using sample-first, memory-efficient processing and DuckDB fast paths.
+  - Hardened data quality with Parquet validation/timeouts and automated reprocessing to recover from corrupt inputs.
+  - Isolated third-party access via dedicated Workload Identity Federation pools/providers and Terraform-managed credentials.
 - date: Apr 2025 - Jun 2025
   title: Software Engineer
   organization: Concan Consulting Corporation
