@@ -24,14 +24,10 @@ experience:
   description: Data engineering and cloud infrastructure development for AI-powered
     business intelligence platform.
   highlights:
-  - Shipped a schema-aware NL→SQL service on GCP with validation, safety, and streaming responses.
-  - Deployed a GDPR-aligned cloud stack with VPC controls, CMEK, secrets, audit policies, and regional enforcement.
-  - Split data workloads into dedicated extraction, merge, backend, and analytics repos with Dockerized deploys.
-  - Built extraction CLI pipelines (discover, restore, export, cleanup) with reproducible runs.
-  - Created a FastAPI backend with table context, ERD, SQL editor, notebook execution, and streaming chat; packaged with CLI and Docker.
-  - Developed analytics views for timelines, churn, and at-risk reporting using sample-first, memory-efficient processing and DuckDB fast paths.
-  - Hardened data quality with Parquet validation/timeouts and automated reprocessing to recover from corrupt inputs.
-  - Isolated third-party access via dedicated Workload Identity Federation pools/providers and Terraform-managed credentials.
+  - Built and deployed an LLM-powered natural language to SQL service using Gemini and ontology-driven prompt engineering, serving millions of rows across multiple client environments with automated validation and three-stage promotion pipelines.
+  - Designed multi-tenant cloud infrastructure on GCP spanning 9+ isolated client environments with Terraform-managed IAM, encryption, ingestion scheduling, and CI/CD with automated quality gates.
+  - Shipped a full-stack data orchestration tool from zero — backend API with Vertex AI chat integration, relational model compiler, and React frontend with interactive graph visualization, deployed to production in under a week.
+  - Reduced technical debt by retiring legacy services and consolidating 20+ GCP projects, removing thousands of lines of dead code while maintaining zero-downtime deployments across all environments.
 - date: Apr 2025 - Jun 2025
   title: Software Engineer
   organization: Concan Consulting Corporation
