@@ -28,6 +28,9 @@ Thumbs.db
 .skills-reference.yml
 work-log.md
 
+# Journal (contains company/client data — kept local only)
+journal/
+
 # Environment variables (contains API keys)
 .env
 
