@@ -24,10 +24,10 @@ experience:
   description: Data engineering and cloud infrastructure development for AI-powered
     business intelligence platform.
   highlights:
-  - Built and deployed an LLM-powered natural language to SQL service using Gemini and ontology-driven prompt engineering, serving millions of rows across multiple client environments with automated validation and three-stage promotion pipelines.
-  - Designed multi-tenant cloud infrastructure on GCP spanning 9+ isolated client environments with Terraform-managed IAM, encryption, ingestion scheduling, and CI/CD with automated quality gates.
-  - Shipped a full-stack data orchestration tool from zero — backend API with Vertex AI chat integration, relational model compiler, and React frontend with interactive graph visualization, deployed to production in under a week.
-  - Reduced technical debt by retiring legacy services and consolidating 20+ GCP projects, removing thousands of lines of dead code while maintaining zero-downtime deployments across all environments.
+  - Built and deployed an LLM-powered query generation service with automated validation, multi-stage promotion pipelines, and production observability serving millions of rows.
+  - Designed multi-tenant cloud infrastructure on GCP with Terraform-managed IAM, encryption, scheduled ingestion, and CI/CD pipelines with automated quality gates.
+  - Shipped a full-stack internal tool from zero — FastAPI backend with LLM integration, React frontend with interactive graph visualization, deployed to production in under a week.
+  - Reduced technical debt by retiring legacy services, consolidating cloud projects, and removing thousands of lines of dead code while maintaining zero-downtime deployments.
 - date: Apr 2025 - Jun 2025
   title: Software Engineer
   organization: Concan Consulting Corporation
