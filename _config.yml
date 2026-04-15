@@ -51,6 +51,7 @@ exclude:
   - webpack.config.js
   - src/
   - README.md
+  - journal/
 
 # Plugins (GitHub Pages safe)
 plugins:
