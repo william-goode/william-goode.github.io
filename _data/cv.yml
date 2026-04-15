@@ -161,27 +161,39 @@ skills:
 - category: Programming Languages
   items:
   - Python
-  - SQL (BigQuery, MS SQL Server, PostgreSQL)
+  - SQL (BigQuery, DuckDB, PostgreSQL, MS SQL Server)
+  - JavaScript (React)
+  - R
   - C# / .NET
 - category: Cloud & Infrastructure
   items:
-  - AWS (Lambda, S3, RDS, Athena)
-  - GCP (BigQuery, Cloud Storage, Cloud Run, IAM)
+  - GCP (BigQuery, Cloud Run, Cloud Functions, Dataproc, Cloud Scheduler, Firestore, API Gateway, Artifact Registry)
+  - AWS (Lambda, S3, RDS)
+  - Terraform
   - Docker
-  - Data ingestion pipelines
-- category: Backend
+  - GitHub Actions
+- category: Backend & Services
   items:
   - FastAPI
+  - LLM integration (Vertex AI / Gemini)
+  - Ontology-based data access (OBDA)
+  - Secure sandboxed execution
   - ASP.NET Core
-  - Entity Framework
-  - LLM integration
-- category: Data Engineering & Databases
+- category: Data Engineering
   items:
-  - Data pipeline development
-  - Vector databases
-  - Query optimization and performance tuning
-  - Exploratory data analysis
+  - Medallion architecture (bronze/silver/gold)
+  - PySpark
+  - Data lineage (SQLGlot)
   - Schema reconciliation
+  - Cross-source entity resolution
+  - Multi-source ingestion pipelines
+- category: Frontend
+  items:
+  - React
+  - ReactFlow
+  - D3.js
+  - Monaco Editor
+  - Server-Sent Events (SSE)
 - category: Mathematics
   items:
   - Abstract algebra
