@@ -1,33 +1,52 @@
 ---
 ---
 
-// Discord Dark Mode Color Palette
-// Base colors
-$base: #36393F;           // Main background
-$mantle: #2F3136;         // Secondary background
-$crust: #202225;          // Darkest elements
-
-// Text colors
-$text: #DCDDDE;           // Primary text
-$subtext1: #B9BBBE;       // Secondary text
-$subtext0: #8E9297;       // Muted text
-
-// Surface colors
-$surface0: #2C2F33;       // Component background
-$surface1: #40444B;       // Elevated surfaces
-$surface2: #4F545C;       // Higher elevation
-
-// Overlay colors
-$overlay0: #72767D;       // Borders and dividers
-$overlay1: #8E9297;       // Interactive borders
-$overlay2: #A3A6AA;       // Hover borders
+// Catppuccin Mocha Color Palette
+// https://catppuccin.com/palette
 
 // Accent colors
-$blurple: #5865F2;        // Discord brand color
-$green: #3BA55D;          // Success
-$yellow: #FAA81A;         // Warning
-$red: #ED4245;            // Error
-$link: #00AFF4;           // Links
+$rosewater: #f5e0dc;
+$flamingo: #f2cdcd;
+$pink: #f5c2e7;
+$mauve: #cba6f7;
+$red: #f38ba8;
+$maroon: #eba0ac;
+$peach: #fab387;
+$yellow: #f9e2af;
+$green: #a6e3a1;
+$teal: #94e2d5;
+$sky: #89dceb;
+$sapphire: #74c7ec;
+$blue: #89b4fa;
+$lavender: #b4befe;
+
+// Text colors
+$text: #cdd6f4;
+$subtext1: #bac2de;
+$subtext0: #a6adc8;
+
+// Overlay colors
+$overlay2: #9399b2;
+$overlay1: #7f849c;
+$overlay0: #6c7086;
+
+// Surface colors
+$surface2: #585b70;
+$surface1: #45475a;
+$surface0: #313244;
+
+// Base colors
+$base: #1e1e2e;
+$mantle: #181825;
+$crust: #11111b;
+
+// Semantic aliases
+$accent: $blue;
+$accent-dim: $sapphire;
+$link: $sapphire;
+$success: $green;
+$warning: $yellow;
+$error: $red;
 
 // Typography
 $font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -57,9 +76,6 @@ body {
   line-height: 1.6;
   color: $text;
   background-color: $base;
-  background-image: 
-    linear-gradient(to bottom, transparent 95%, rgba(49, 50, 68, 0.3) 100%);
-  background-size: 100% 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -73,22 +89,22 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
-h1 { 
+h1 {
   font-size: 2.5rem;
   font-weight: 600;
 }
 
-h2 { 
+h2 {
   font-size: 2rem;
   font-weight: 600;
 }
 
-h3 { 
+h3 {
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-h4 { 
+h4 {
   font-size: 1.25rem;
   font-weight: 500;
 }
@@ -98,15 +114,15 @@ p {
 }
 
 a {
-  color: $text;
+  color: $link;
   text-decoration: underline;
-  text-decoration-color: $overlay0;
+  text-decoration-color: rgba($link, 0.4);
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
-  transition: all 0.3s ease;
-  
+  transition: all 0.2s ease;
+
   &:hover {
-    text-decoration-color: $subtext1;
+    text-decoration-color: $link;
   }
 }
 
@@ -118,7 +134,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba($crust, 0.5);
 }
 
 .nav-container {
@@ -134,21 +150,28 @@ a {
   display: flex;
   list-style: none;
   gap: $spacing-md;
-  
+
   a {
-    color: $subtext1;
+    color: $subtext0;
     font-family: $font-body;
     font-weight: 500;
     font-size: 0.95rem;
     text-decoration: none;
     padding: $spacing-xs $spacing-sm;
     border-radius: 4px;
-    transition: all 0.3s ease;
-    
-    &:hover, &.active {
+    transition: all 0.2s ease;
+
+    &:hover {
       color: $text;
       background-color: $surface0;
       text-decoration: none;
+    }
+
+    &.active {
+      color: $text;
+      background-color: $surface0;
+      text-decoration: none;
+      box-shadow: inset 0 -2px 0 $accent;
     }
   }
 }
@@ -158,7 +181,7 @@ a {
     flex-direction: column;
     gap: $spacing-sm;
   }
-  
+
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
@@ -197,28 +220,28 @@ a {
     margin-left: $spacing-md;
     margin-bottom: $spacing-sm;
   }
-  
+
   li {
     margin-bottom: $spacing-xs;
   }
-  
+
   blockquote {
-    border-left: 2px solid $overlay0;
+    border-left: 2px solid $mauve;
     padding-left: $spacing-md;
     margin: $spacing-md 0;
     font-style: italic;
     color: $subtext1;
   }
-  
+
   code {
     background-color: $surface0;
     padding: 2px 6px;
     border-radius: 3px;
     font-family: 'Courier New', monospace;
     font-size: 0.9em;
-    color: $subtext1;
+    color: $peach;
   }
-  
+
   pre {
     background-color: $mantle;
     color: $text;
@@ -227,7 +250,7 @@ a {
     overflow-x: auto;
     margin-bottom: $spacing-sm;
     border: 1px solid $surface0;
-    
+
     code {
       background-color: transparent;
       padding: 0;
@@ -278,7 +301,7 @@ a {
   font-size: 0.8rem;
   font-family: $font-body;
   font-weight: 500;
-  border: 1px solid $surface2;
+  border: 1px solid $surface1;
   letter-spacing: 0.01em;
 }
 
@@ -296,34 +319,34 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: $spacing-md;
-  
+
   a {
     display: flex;
     flex-direction: column;
     padding: $spacing-sm;
     border: 1px solid $surface1;
     border-radius: 6px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     text-decoration: none;
-    
+
     &:hover {
       border-color: $overlay0;
       background-color: $surface0;
     }
   }
-  
+
   .nav-label {
     font-size: 0.85rem;
     color: $subtext0;
     margin-bottom: $spacing-xs;
   }
-  
+
   .nav-title {
     font-family: $font-body;
     font-weight: 600;
     color: $text;
   }
-  
+
   .nav-next {
     text-align: right;
   }
@@ -348,7 +371,7 @@ a {
 
 .search-box {
   margin-bottom: $spacing-md;
-  
+
   .search-input {
     width: 100%;
     padding: $spacing-sm;
@@ -358,13 +381,13 @@ a {
     border-radius: 6px;
     background-color: $surface0;
     color: $text;
-    transition: border-color 0.3s ease;
-    
+    transition: border-color 0.2s ease;
+
     &:focus {
       outline: none;
-      border-color: $overlay0;
+      border-color: $accent;
     }
-    
+
     &::placeholder {
       color: $subtext0;
     }
@@ -387,17 +410,17 @@ a {
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
-  
+  transition: all 0.2s ease;
+
   &:hover {
     border-color: $overlay0;
     color: $text;
   }
-  
+
   &.active {
-    background-color: $surface1;
-    color: $text;
-    border-color: $overlay0;
+    background-color: rgba($accent, 0.15);
+    color: $accent;
+    border-color: rgba($accent, 0.3);
     font-weight: 500;
   }
 }
@@ -412,11 +435,11 @@ a {
   padding: $spacing-md;
   border-radius: 6px;
   border: 1px solid $surface1;
-  transition: all 0.3s ease;
-  
+  transition: all 0.2s ease;
+
   &:hover {
     border-color: $overlay0;
-    background-color: $surface1;
+    background-color: rgba($surface1, 0.7);
   }
 }
 
@@ -431,14 +454,13 @@ a {
 
 .article-title {
   margin-bottom: $spacing-xs;
-  
+
   a {
     color: $text;
     text-decoration: none;
-    
+
     &:hover {
-      text-decoration: underline;
-      text-decoration-color: $overlay0;
+      color: $accent;
     }
   }
 }
@@ -466,7 +488,7 @@ a {
 .cv-timeline {
   position: relative;
   padding-left: $spacing-md;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -474,7 +496,7 @@ a {
     top: 0;
     bottom: 0;
     width: 1px;
-    background-color: $surface1;
+    background: linear-gradient(to bottom, $accent, $mauve);
   }
 }
 
@@ -491,7 +513,7 @@ a {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: $overlay0;
+  background-color: $accent;
   border: 2px solid $base;
   z-index: 1;
 }
@@ -501,8 +523,8 @@ a {
   padding: $spacing-md;
   border-radius: 6px;
   border: 1px solid $surface1;
-  transition: all 0.3s ease;
-  
+  transition: all 0.2s ease;
+
   &:hover {
     border-color: $overlay0;
   }
@@ -514,7 +536,7 @@ a {
 
 .timeline-date {
   display: block;
-  color: $subtext0;
+  color: $accent-dim;
   font-size: 0.85rem;
   margin-bottom: $spacing-xs;
   text-transform: uppercase;
@@ -536,12 +558,12 @@ a {
   margin-top: $spacing-sm;
   padding-top: $spacing-sm;
   border-top: 1px solid $surface1;
-  
+
   ul {
     margin-left: $spacing-md;
     margin-top: $spacing-xs;
   }
-  
+
   li {
     margin-bottom: $spacing-xs;
   }
@@ -580,22 +602,22 @@ a {
 }
 
 .footer-link {
-  color: $subtext1;
+  color: $subtext0;
   font-family: $font-body;
   font-weight: 500;
   padding: $spacing-xs $spacing-sm;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   text-decoration: none;
-  
+
   &:hover {
-    color: $text;
+    color: $accent;
   }
 }
 
 .footer-copyright {
   font-size: 0.85rem;
-  color: $subtext0;
+  color: $overlay0;
 }
 
 // Hero Section (for home page)
@@ -603,7 +625,7 @@ a {
   text-align: center;
   padding: $spacing-xl 0;
   margin-bottom: $spacing-lg;
-  
+
   h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -611,9 +633,9 @@ a {
     color: $text;
     letter-spacing: -0.02em;
   }
-  
+
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: $subtext0;
     max-width: 600px;
     margin: 0 auto;
@@ -624,7 +646,7 @@ a {
   .hero h1 {
     font-size: 2rem;
   }
-  
+
   .hero p {
     font-size: 1rem;
   }
@@ -677,12 +699,12 @@ a {
   }
 
   a {
-    color: $text;
+    color: $link;
     text-decoration: underline;
-    text-decoration-color: $overlay0;
+    text-decoration-color: rgba($link, 0.4);
 
     &:hover {
-      text-decoration-color: $subtext1;
+      text-decoration-color: $link;
     }
   }
 }
@@ -691,28 +713,123 @@ a {
   display: inline-block;
   margin: 0 $spacing-sm;
   padding: $spacing-xs $spacing-sm;
-  color: $text;
+  color: $accent;
   font-family: $font-body;
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
-  border-bottom: 1px solid $overlay0;
-  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba($accent, 0.3);
+  transition: all 0.2s ease;
 
   &:hover {
-    border-bottom-color: $subtext1;
+    border-bottom-color: $accent;
+    color: $lavender;
   }
 }
 
-// Decorative elements
-.ornament {
+// CV Page
+.cv-section {
+  margin-bottom: $spacing-lg;
+}
+
+.download-section {
+  margin-bottom: $spacing-lg;
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-md;
+  max-width: 800px;
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint-mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.download-card {
+  background-color: $surface0;
+  padding: $spacing-md;
+  border-radius: 6px;
+  border: 1px solid $surface1;
   text-align: center;
-  margin: $spacing-lg 0;
-  color: $overlay0;
-  font-size: 1rem;
-  
-  &::before {
-    content: '***';
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: $spacing-xs;
+    color: $text;
   }
 }
 
+.download-meta {
+  font-size: 0.85rem;
+  color: $subtext0;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: $surface1;
+  color: $text;
+  font-weight: 500;
+  font-family: $font-body;
+  font-size: 0.9rem;
+  border: 1px solid $overlay0;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $surface2;
+    border-color: $overlay1;
+    color: $text;
+    text-decoration: none;
+  }
+}
+
+// Research page
+.research-intro {
+  margin-bottom: $spacing-lg;
+  padding-bottom: $spacing-md;
+  border-bottom: 1px solid $surface1;
+
+  h3 {
+    margin-top: $spacing-md;
+    margin-bottom: $spacing-sm;
+  }
+
+  ul {
+    margin-left: $spacing-md;
+  }
+
+  li {
+    margin-bottom: $spacing-xs;
+  }
+}
+
+// Skills List (Engineering page)
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.skill-category h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: $accent;
+}
+
+.skill-category ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.skill-category li {
+  padding: 0.6rem 0;
+  color: $subtext1;
+}
