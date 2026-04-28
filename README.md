@@ -95,36 +95,36 @@ npm run jekyll:serve
 ├── _config.yml           # Jekyll configuration
 ├── _layouts/             # Page layouts
 ├── _includes/            # Reusable components (nav, footer)
-├── _posts/              # Blog articles
-├── _data/               # Data files (CV, etc.)
-│   └── cv.yml          # CV/resume data (synced with resume PDF)
-├── src/                 # React source code
+├── _posts/               # Blog articles
+├── _data/
+│   └── cv.yml            # CV/resume data
+├── src/                  # React source code
 │   ├── index.js
 │   └── components/
-│       ├── ArticleFilter.jsx
-│       └── CVTimeline.jsx
 ├── assets/
-│   ├── css/
-│   │   └── main.scss    # Styles
-│   ├── js/
-│   │   └── components.js  # Webpack output (generated)
-│   ├── resumes/         # Resume generation scripts
-│   │   ├── generate_resume.py
-│   │   ├── generate_resume_bullets.py
-│   │   └── parse_journal.py
-│   └── images/          # Images
-├── journal/             # Weekly work journal
-│   └── 20250811-current.md
-├── docs/                # Documentation
-│   ├── WEEKLY_UPDATE_WORKFLOW.md
-│   ├── SETUP_GUIDE.md
-│   └── reference/       # Internal reference files
-├── .generated/          # Generated files (gitignored)
-├── index.html           # Home page
-├── about.md             # About page
-├── cv.html              # CV page
-└── engineering.md       # Engineering page
+│   ├── css/main.scss     # Styles
+│   ├── js/components.js  # Webpack output (generated)
+│   ├── resumes/          # Resume .tex source + built PDFs
+│   ├── statements/       # Teaching, research, diversity statements
+│   └── images/
+├── journal/              # Weekly work journal (encrypted)
+├── index.html            # Home page
+├── about.md              # About page
+├── cv.html               # CV / resume page
+└── engineering.md        # Engineering page
 ```
+
+## Resume
+
+`assets/resumes/William_Goode_Resume.tex` is the source. To rebuild the served
+PDF after editing:
+
+```bash
+cd assets/resumes
+pdflatex William_Goode_Resume.tex
+```
+
+Commit `William_Goode_Resume.pdf` alongside the `.tex` change.
 
 ## Customization
 

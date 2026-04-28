@@ -34,9 +34,8 @@ work-log.md
 # Environment variables (contains API keys)
 .env
 
-# Generated files
-.generated/*
-!.generated/.gitkeep
-*.pyc
-__pycache__/
-
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc

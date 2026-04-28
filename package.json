@@ -7,9 +7,14 @@
     "dev": "webpack --mode development --watch",
     "jekyll:build": "bundle exec jekyll build",
     "jekyll:serve": "bundle exec jekyll serve --livereload",
-    "serve": "npm run build && npm run jekyll:serve"
+    "serve": "npm run build && npm run jekyll:serve",
+    "resume:build": "cd assets/resumes && md-to-pdf William_Goode_Resume.md"
   },
-  "keywords": ["jekyll", "react", "portfolio"],
+  "keywords": [
+    "jekyll",
+    "react",
+    "portfolio"
+  ],
   "author": "William Goode",
   "license": "MIT",
   "dependencies": {
@@ -21,8 +26,8 @@
     "@babel/preset-env": "^7.23.0",
     "@babel/preset-react": "^7.22.0",
     "babel-loader": "^9.1.3",
+    "md-to-pdf": "^5.2.5",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
   }
 }
-

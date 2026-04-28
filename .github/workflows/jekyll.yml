@@ -38,21 +38,7 @@ jobs:
       
       - name: Build React components
         run: npm run build
-      
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      
-      - name: Install Python dependencies
-        run: |
-          pip install reportlab pyyaml
 
-      - name: Generate Resume PDF
-        run: |
-          cd assets/resumes
-          python3 generate_resume.py
-      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       

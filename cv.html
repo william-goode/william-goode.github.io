@@ -8,8 +8,8 @@ permalink: /cv/
   <div class="download-grid">
     <div class="download-card">
       <h3>Professional Resume</h3>
-      <p class="download-meta">Updated: {{ site.data.resume.last_updated | default: "Recently" }}</p>
-      <a href="{{ '/assets/resumes/William_Goode_Resume_Professional.pdf' | relative_url }}" class="download-button" download>
+      <p class="download-meta">Updated: {{ site.time | date: "%B %Y" }}</p>
+      <a href="{{ '/assets/resumes/William_Goode_Resume.pdf' | relative_url }}" class="download-button" download>
         Download PDF
       </a>
     </div>
