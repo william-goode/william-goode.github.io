@@ -104,7 +104,7 @@ npm run jekyll:serve
 ├── assets/
 │   ├── css/main.scss     # Styles
 │   ├── js/components.js  # Webpack output (generated)
-│   ├── resumes/          # Resume .tex source + built PDFs
+│   ├── resumes/          # Resume Markdown source + built PDF
 │   ├── statements/       # Teaching, research, diversity statements
 │   └── images/
 ├── journal/              # Weekly work journal (encrypted)
@@ -116,15 +116,14 @@ npm run jekyll:serve
 
 ## Resume
 
-`assets/resumes/William_Goode_Resume.tex` is the source. To rebuild the served
+`assets/resumes/William_Goode_Resume.md` is the source. To rebuild the served
 PDF after editing:
 
 ```bash
-cd assets/resumes
-pdflatex William_Goode_Resume.tex
+npm run resume:build
 ```
 
-Commit `William_Goode_Resume.pdf` alongside the `.tex` change.
+Commit `William_Goode_Resume.pdf` alongside the `.md` change.
 
 ## Customization
 
